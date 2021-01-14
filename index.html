@@ -12,6 +12,16 @@
     <h1>Jesper er kul i guess not cringe.</h1>
 
     <input placeholer="Skriv noe her!" />
-    <input type="button" title="En knapp som gjør ingenting" />
+    <input id="btn" type="button" title="En knapp som gjør ingenting" />
+
+    <script>
+      var btn = document.getElementById("btn");
+
+      function btnClicked() {
+        alert("Du klikket på knappen!");
+      }
+
+      btn.onclick = btnClicked;
+    </script>
   </body>
 </html>
